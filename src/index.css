@@ -1,13 +1,132 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poppins:wght@300&family=The+Nautigal:wght@700&display=swap');
+
+/* font-family: 'Leckerli One', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'The Nautigal', cursive; */
+
+/* ======================== BASIC STYLING ============================= */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+
+    --bgcolor: #f1f5fd;
+    --input-background: #f1f1f1;
+    --input-focus-background: #ddd;
+    --primary-color: #6f5de7;
+    --text-color: #828286;
+    --main-text-color: #333333;
+    --btn-color: #04AA6D;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+}
+
+/* ===================== FORM STYLING START=============================== */
+
+.form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container{
+    min-width: 20rem;
+    min-height: 50rem;
+    border: 1px solid var(--text-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2.5rem;
+}
+.form-heading{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+p{
+    color: #333333;
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+hr{
+    margin-bottom: 2rem;
+}
+
+label{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.input-style{
+    margin: 0.4rem 0px 0.6rem 0px;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    outline: none;
+}
+.input-style:focus{
+    border: 2px solid var(--main-text-color)
+}
+.inputMissmatchStyle{
+    margin: 0.4rem 0px 0.6rem 0px;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    outline: none;
+    border: 1px solid red;
+}
+
+.registerBtn{
+    color: white;
+    border: none;
+    outline: none;
+    background-color: var(--btn-color);
+    padding: 0.5rem 0.5rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0.5rem 0px;
+    cursor: pointer;
+}
+.registerBtn:hover{
+    opacity: 0.7;
+}
+
+.formData-container{
+    background-color: var(--primary-color);
+    padding: 1.5rem 3rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-radius: 25px;
+}
+
+.form-data-text span{
+    color: white;
+    font-weight: bold;
+    margin: 0px 0.5rem;
+    font-size: 1.5rem;
 }
